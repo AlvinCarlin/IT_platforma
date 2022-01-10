@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Programiranje web aplikacija</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="" />
+
+        <meta name="keywords" content="" />
+        <meta name="author" content="A C " />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registracija</h1>
+
+            <form action="neki.php" method="post">
+                <div class="form-group">
+                    <label for="ime">Ime:</label>
+                    <input id="ime" name="ime" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label for="prezime">Prezime:</label>
+                    <input id="prezime" name="prezime" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" name="gender" value="Male" checked />
+                    Muško
+                    <br />
+                    <input type="radio" name="gender" value="Female" /> Žensko
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" value="Y" / >Newsletter
+                </div>
+                <div class="form-group">
+                    <label for="motori">Izaberi motor:</label>
+
+                    <select name="cars" id="cars">
+                        <option value="Suzuki">Suzuki gsx600</option>
+                        <option value="Harley">Harley davidson 1300</option>
+                        <option value="Yamaha">Yamaha fzr900</option>
+                        <option value="Tommos">Apn6</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="text-area">Nešto o sebi:</label>
+
+                    <textarea id="text-area" name="w3review" rows="4" cols="50">
+                  Unesi neki tekst
+                    </textarea>
+                </div>
+
+                <input type="submit" class="submit-button" value="Pošalji" />
+                <input type="reset" class="denied-button" value="Poništi" />
+            </form>
+        </div>
+    </body>
+</html>
